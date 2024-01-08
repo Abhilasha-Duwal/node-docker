@@ -19,7 +19,7 @@ services:
       - SESSION_SECRET=${SESSION_SECRET}
     command: npm run dev  
 
-  mongo:
+  mongodb:
     image: mongo
     ports:
       - 28017:27017

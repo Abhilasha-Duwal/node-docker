@@ -16,7 +16,7 @@ services:
       - SESSION_SECRET=${SESSION_SECRET}
     command: npm start 
 
-  mongo:
+  mongodb:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}  
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}  
