@@ -30,10 +30,7 @@ const mongoURL = `mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONGO_
 
 const connectWithRetry = () => {
   mongoose
-    .connect(mongoURL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
+    .connect(mongoURL)
     .then(() => console.log("Mongodb connected successfuly!!"))
     .catch((e) => {
       console.log("Error connecting to MongoDB:", e);
